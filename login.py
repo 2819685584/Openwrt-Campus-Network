@@ -88,9 +88,9 @@ def execute():
     # 记录查询次数
     count = 1
     # 从第一个账号开始判断
-    login("1800300914", "082835")
+    login("18003*****", "******")
     login_time = time.strftime("%Y/%m/%d %H:%M:%S", time.localtime())
-    pri = f"{login_time} 已登录初始用户'黄广'"
+    pri = f"{login_time} 已登录初始用户'**'"
     with open("/root/currentUser.txt", "a") as log_file:
         log_file.write(pri + "\n")
     try:
@@ -178,11 +178,12 @@ def send_mail(exception_msg):
     # 配置SMTP服务器的信息
     smtp_server = "smtp.163.com"
     smtp_port = 465
-    sender_email = "liu_hengfeng@163.com"
-    receiver_email = "2819685584@qq.com"
-    # cdnscupalnycdgei  QQ邮箱POP/IMAP/SMTP服务授权码  相当于第三方客户端登录SMTP服务器的密码
-    # XOEKMLMKKKSJKJZI  163邮箱IMAP/SMTP服务授权码 相当于第三方客户端登录SMTP服务器的密码
-    password = "XOEKMLMKKKSJKJZI"
+    # 换成自己的发送邮箱地址，用来发邮件
+    sender_email = "*******@163.com"
+    # 换成自己的发送邮箱地址，用来接受邮件
+    receiver_email = "********@qq.com"
+    # 可以到邮箱设置里面找
+    password = "******"
 
     # 构建邮件内容
     message = MIMEMultipart()
