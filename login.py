@@ -38,7 +38,7 @@ def login(account: str, password: str):
     loginurl = "http://10.0.1.5/drcom/login"
     # 产生一个3000~8000的随机数作为参数
     num = random.randint(3000, 9000)
-    # GET http://10.0.1.5/drcom/login?callback=dr1003&DDDDD=23032307019&upass=QWE2819685584%23%40!&0MKKey=123456&R1=0&R2=&R3=0&R6=0&para=00&v6ip=&terminal_type=1&lang=zh-cn&jsVersion=4.2&v=2013&lang=zh
+    # GET http://10.0.1.5/drcom/login?callback=dr1003&DDDDD=23032300001&upass=12345678&0MKKey=123456&R1=0&R2=&R3=0&R6=0&para=00&v6ip=&terminal_type=1&lang=zh-cn&jsVersion=4.2&v=2013&lang=zh
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
         "Accept": "*/*",
